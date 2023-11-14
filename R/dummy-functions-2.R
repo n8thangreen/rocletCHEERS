@@ -10,11 +10,13 @@
 #' @cheers extrapolation
 #' @cheers population-adjustment
 #' @cheers uncertainty
-#' @cheers input-distributions
-#' @cheers input-parameters
-#' @cheers mean-outputs
 #' @export
 dd <- function(x, y) {
+  #' @cheers input-distributions
+  x <- 1
+  #' @cheers input-parameters
+  y <- 2
+  #' @cheers mean-outputs
   # ...
 }
 
@@ -22,10 +24,8 @@ dd <- function(x, y) {
 #'
 #' @cheers population-adjustment
 #' @cheers uncertainty
-#' @cheers input-distributions
-#' @cheers input-parameters
-#' @cheers mean-outputs
 #' @export
 hh <- function(x, y) {
   # ...
+  #' @cheers uncertainty
 }
