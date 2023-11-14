@@ -1,7 +1,7 @@
 
 #' ff
 #'
-#' @cheers time horizon
+#' @cheers time-horizon
 #' @export
 ff <- function(x, y) {
   # ...
@@ -9,7 +9,7 @@ ff <- function(x, y) {
 
 #' gg
 #'
-#' @cheers discounting
+#' @cheers population-adjustment
 #' @export
 gg <- function(x, y) {
   # ...

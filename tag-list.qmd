@@ -1,0 +1,33 @@
+---
+title: "Cheers tag list"
+format: html
+editor: visual
+---
+
+## Introduction
+
+This list is taken from the Consolidated Health Economic Evaluation Reporting Standards (CHEERS) [checklist](https://www.ispor.org/heor-resources/good-practices/cheers). Using the roclets tag `@cheers`.
+
+## Full list of fields
+
+
+* `comparators`
+* `time-horizon`
+* `discount-rate`
+* `outcomes`
+* `costs`
+* `currency`?
+* `extrapolation`
+* `population-adjustment`
+* `uncertainty`
+* `input-distributions`
+* `input-parameters`
+* `mean-outputs`
+ 
+
+
+
+
+
+
+

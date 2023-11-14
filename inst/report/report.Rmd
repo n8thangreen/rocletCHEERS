@@ -1,0 +1,39 @@
+---
+title: "Auto-generated report from CHEERS checklist"
+header-includes: \usepackage{graphicx} \usepackage{bm}
+date: "Version: `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document: default
+  pdf_document:
+    fontsize: 11pt
+    geometry: margin=1cm
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, comment=NA}
+options(scipen = 999)
+
+align <- 
+  if (rmd_params$ext == "pdf") {
+    "center"
+  } else {
+    "default"
+  }
+```
+
+## Introduction
+
+```{r, echo=echo, warning=FALSE, message=FALSE, comment=NA}
+```
+
+<!-- ```{r child = 'xxx.Rmd'} -->
+<!-- ``` -->
+
+## CHEERS fields
+
+```{r}
+
+roxygenize(roclets = "cheers_roclet")
+```
+
+## References
+
