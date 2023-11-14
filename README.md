@@ -2,6 +2,33 @@
 
 Automatically create a CHEERS-related report from R code using `roxygen2`.
 
+## Overview
+
+Simply insert roxygen style comments into the code using the tag `@cheers`.
+For example, this will look like this
+
+```r
+#' My function name
+#'
+#' @cheers population-adjustment
+#' @cheers uncertainty
+#' @export
+#'
+dd <- function(x, y) {
+  #' @cheers input-distributions
+  x <- 1
+  #' @cheers input-parameters
+  y <- 2
+  #' @cheers mean-outputs
+  # ...
+}
+```
+
+Note that the comments
+
+* have to be as part of a function
+* can be in the function documentation block at the top or in the function body
+
 ## Full list of fields
 
 
