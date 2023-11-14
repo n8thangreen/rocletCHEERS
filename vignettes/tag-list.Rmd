@@ -1,0 +1,38 @@
+---
+title: "tag-list"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{tag-list}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rocletCHEERS)
+```
+
+## Introduction
+
+This list is taken from the Consolidated Health Economic Evaluation Reporting Standards (CHEERS) [checklist](https://www.ispor.org/heor-resources/good-practices/cheers). Using the roclets tag `@cheers`.
+
+## Full list of fields
+
+-   `comparators`
+-   `time-horizon`
+-   `discount-rate`
+-   `outcomes`
+-   `costs`
+-   `currency`?
+-   `extrapolation`
+-   `population-adjustment`
+-   `uncertainty`
+-   `input-distributions`
+-   `input-parameters`
+-   `mean-outputs`
