@@ -47,7 +47,16 @@ Note that the comments
 * `input-parameters`
 * `mean-outputs`
 
-## Example output
+## Example
+
+### Usage
+After inserting the comments in the code then simply _roxygenise_ just like you would normally when creating package documentation but using the `cheers_roclet` roclet instead.
+
+```r
+roxygenize(roclets = "cheers_roclet")
+```
+
+### output
 
 ```r
 time-horizon: 
