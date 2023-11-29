@@ -56,7 +56,7 @@ After inserting the comments in the code then simply _roxygenise_ just like you 
 roxygenize(roclets = "cheers_roclet")
 ```
 
-### output
+### Output
 
 ```r
 time-horizon: 
