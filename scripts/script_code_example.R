@@ -17,6 +17,17 @@ roxy_tag_parse.roxy_tag_cheers <- function(x) {
   x
 }
 
+text <- "
+  #' @cheers time horizon
+  f <- function(x, y) {
+    # ...
+  }"
+
+
+block <- parse_text(text)
+block
+
+str(block[[1]]$tags)
 
 cheers_roclet <- function() {
   roclet("cheers")
@@ -49,5 +60,18 @@ roclet_output.roclet_cheers <- function(x, results, base_path, ...) {
   invisible(NULL)
 }
 
+code_text <- roc_proc_text(cheers_roclet(), "
+#' @cheers time horizon
+f <- function(x, y) {
+  # ...
+}
 
-roxygenize(roclets = "cheers_roclet")
+#' @cheers discounting
+g <- function(x, y) {
+  # ...
+}
+")
+
+roclet_output(cheers_roclet(), code_text)
+
+# roxygenize(roclets = "cheers_roclet")

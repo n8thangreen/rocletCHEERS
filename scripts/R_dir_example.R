@@ -1,10 +1,15 @@
+# use on current package code
 #
 # https://cran.r-project.org/web/packages/roxygen2/vignettes/extending.html
 #
+# use:
+# #' @cheers checklist item
+
 
 library(roxygen2)
 
-#' @cheers checklist item
+#############
+# functions
 
 # parse method
 roxy_tag_parse.roxy_tag_cheers <- function(x) {
@@ -17,18 +22,7 @@ roxy_tag_parse.roxy_tag_cheers <- function(x) {
   x
 }
 
-text <- "
-  #' @cheers time horizon
-  f <- function(x, y) {
-    # ...
-  }"
-
-
-block <- parse_text(text)
-block
-
-str(block[[1]]$tags)
-
+#
 cheers_roclet <- function() {
   roclet("cheers")
 }
@@ -60,18 +54,8 @@ roclet_output.roclet_cheers <- function(x, results, base_path, ...) {
   invisible(NULL)
 }
 
-results <- roc_proc_text(cheers_roclet(), "
-#' @cheers time horizon
-f <- function(x, y) {
-  # ...
-}
 
-#' @cheers discounting
-g <- function(x, y) {
-  # ...
-}
-")
+######
+# use
 
-roclet_output(cheers_roclet(), results)
-
-# roxygenize(roclets = "cheers_roclet")
+roxygenize(package.dir = ".", roclets = "cheers_roclet")

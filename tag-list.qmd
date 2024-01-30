@@ -10,24 +10,15 @@ This list is taken from the Consolidated Health Economic Evaluation Reporting St
 
 ## Full list of fields
 
-
-* `comparators`
-* `time-horizon`
-* `discount-rate`
-* `outcomes`
-* `costs`
-* `currency`?
-* `extrapolation`
-* `population-adjustment`
-* `uncertainty`
-* `input-distributions`
-* `input-parameters`
-* `mean-outputs`
- 
-
-
-
-
-
-
-
+-   `comparators`
+-   `time-horizon`
+-   `discount-rate`
+-   `outcomes`
+-   `costs`
+-   `currency`?
+-   `extrapolation`
+-   `population-adjustment`
+-   `uncertainty`
+-   `input-distributions`
+-   `input-parameters`
+-   `mean-outputs`

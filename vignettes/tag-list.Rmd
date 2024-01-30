@@ -1,5 +1,5 @@
 ---
-title: "tag-list"
+title: "Roxygen tag list"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{tag-list}
@@ -24,15 +24,19 @@ This list is taken from the Consolidated Health Economic Evaluation Reporting St
 
 ## Full list of fields
 
--   `comparators`
--   `time-horizon`
--   `discount-rate`
--   `outcomes`
--   `costs`
--   `currency`?
--   `extrapolation`
--   `population-adjustment`
--   `uncertainty`
--   `input-distributions`
--   `input-parameters`
--   `mean-outputs`
+| tag                | Description |
+|--------------------|-------------|
+| `comparators`      | |
+| `time-horizon`     | |
+| `discount-rate`    | |
+| `outcomes`         | |
+| `costs`            | |
+| `currency`?        | |
+| `extrapolation`    | |
+| `population-adjustment` | |
+| `uncertainty`      | |
+| `input-distributions` | |
+| `input-parameters` | |
+| `mean-outputs`     | |
+
+

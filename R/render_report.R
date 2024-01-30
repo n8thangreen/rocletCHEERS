@@ -1,6 +1,6 @@
 
 #
-remder_report <- function(ext = "pdf",
+render_report <- function(ext = "pdf",
                           echo = FALSE,
                           ...) {
 

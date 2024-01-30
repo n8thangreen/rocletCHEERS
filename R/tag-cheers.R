@@ -1,4 +1,10 @@
-# parse method
+
+#' parse method
+#'
+#' @param x
+#'
+#' @export
+#'
 roxy_tag_parse.roxy_tag_cheers <- function(x) {
 
   parsed <- x$raw
@@ -9,12 +15,23 @@ roxy_tag_parse.roxy_tag_cheers <- function(x) {
   x
 }
 
-
+#' cheers_roclet
+#'
+#' @export
+#'
 cheers_roclet <- function() {
   roclet("cheers")
 }
 
-#
+#' roclet_process roclet_cheers method
+#'
+#' @param x
+#' @param blocks
+#' @param env
+#' @param base_path
+#'
+#' @export
+#'
 roclet_process.roclet_cheers <- function(x, blocks, env, base_path) {
   results <- list()
 
@@ -30,7 +47,15 @@ roclet_process.roclet_cheers <- function(x, blocks, env, base_path) {
   results
 }
 
-#
+#' roclet_output roclet_cheers method
+#'
+#' @param x
+#' @param results
+#' @param base_path
+#' @param ...
+#'
+#' @export
+#'
 roclet_output.roclet_cheers <- function(x, results, base_path, ...) {
   for (header in names(results)) {
     messages <- results[[header]]
